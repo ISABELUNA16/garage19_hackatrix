@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,14 +6,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit() {
-    this.route.fragment.subscribe((fragment: string) => { 
-      if (fragment && document.getElementById(fragment) != null) {
-        document.getElementById(fragment).scrollIntoView({ behavior: 'smooth' });
-      }
-    });
+
   }
 
 }
