@@ -14,7 +14,9 @@ import { SliderComponent } from './components/slider/slider.component';
 import { PersonFormComponent } from './components/personform/personform.component';
 import { FormCompanyComponent } from './components/form-company/form-company.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ObjectsComponent } from './components/objects/objects.component';
 import { AboutComponent } from './components/about/about.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,11 @@ import { AboutComponent } from './components/about/about.component';
     FormComponent,
     SecondComponent,
     ThirdComponent,
-    SliderComponent,
+    SliderComponent, 
+    PersonFormComponent,
+    FormCompanyComponent,
+    ContactComponent,
+    ObjectsComponent,
     ContactComponent,
     AboutComponent,
     PersonFormComponent,

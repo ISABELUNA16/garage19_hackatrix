@@ -5,10 +5,10 @@ import { PersonFormComponent } from '../components/personform/personform.compone
 import { FormCompanyComponent } from '../components/form-company/form-company.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'person', component: PersonFormComponent },
-  {path:'company', component: FormCompanyComponent }
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'register', component: PersonFormComponent },
+  { path: 'company', component: FormCompanyComponent }
 ];
 
 @NgModule({
