@@ -37,3 +37,4 @@ class tb_person(models.Model):
     criminal_record = models.CharField(max_length=250)
     description = models.TextField()
     start_register = models.DateTimeField()
+    DNI = models.IntegerField()
