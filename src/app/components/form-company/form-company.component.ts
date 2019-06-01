@@ -20,4 +20,6 @@ export class FormCompanyComponent implements OnInit {
   ngOnInit() {
   }
 
+  resetform(){
+  } 
 }

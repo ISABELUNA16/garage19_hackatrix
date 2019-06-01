@@ -16,6 +16,7 @@ import { FormCompanyComponent } from './components/form-company/form-company.com
 import { ContactComponent } from './components/contact/contact.component';
 import { ObjectsComponent } from './components/objects/objects.component';
 import { AboutComponent } from './components/about/about.component';
+import { PurposeComponent } from './components/purpose/purpose.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { AboutComponent } from './components/about/about.component';
     AboutComponent,
     PersonFormComponent,
     FormCompanyComponent,
-    ContactComponent
+    ContactComponent,
+    PurposeComponent
   ],
   imports: [
     BrowserModule,
