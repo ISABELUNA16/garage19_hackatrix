@@ -1,3 +1,41 @@
-<p>
-  form-company works!
-</p>
+<div class="formContainer">
+    <h1>Inscripción Empresa</h1>
+    <form>
+        <div class="form-group">
+            <label><strong>Área:</strong></label>
+            <select class="form-control">
+              <option value="placeholder">placeholder</option>
+            </select>
+       </div>
+      <div class="form-group">
+        <label><strong>Nombre o Razón Social:</strong></label>
+        <input type="text" class="form-control form-text"  placeholder="Nombre / Razón Social" />
+      </div>
+      <div class="form-group">
+          <label><strong>RUC:</strong></label>
+          <input type="text" (keypress)="numberOnly($event)" class="form-control form-text" />
+      </div>
+      <div class="form-group">
+          <label><strong>Teléfono:</strong></label>
+          <input type="text" class="form-control form-text"  />
+      </div>
+      <div class="form-group">
+          <label><strong>Email:</strong></label>
+          <input type="email" class="form-control form-text" placeholder="nombre@dominio.com" />
+      </div>
+      <div class="form-group">
+          <label><strong>Provincia:</strong></label>
+          <input type="text" class="form-control form-text" placeholder="Provincia" />
+      </div>
+      <div class="form-group">
+          <label><strong>Distrito:</strong></label>
+          <input type="text" class="form-control form-text" placeholder="Distrito" />
+      </div>
+      <div class="form-group">
+          <label><strong>Descripción:</strong></label>
+          <textarea type="text" class="form-control form-text" placeholder="Descripción..." rows="4" >
+            
+          </textarea>
+      </div>
+    </form>
+  </div>
