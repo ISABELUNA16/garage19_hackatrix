@@ -6,12 +6,22 @@ import { AppComponent } from './app.component';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FormComponent } from './components/form/form.component';
+import { SecondComponent } from './components/second/second.component';
+import { ThirdComponent } from './components/third/third.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    FormComponent,
+    SecondComponent,
+    ThirdComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
