@@ -11,6 +11,8 @@ import { FormComponent } from './components/form/form.component';
 import { SecondComponent } from './components/second/second.component';
 import { ThirdComponent } from './components/third/third.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { PersonFormComponent } from './components/personform/personform.component';
+import { FormCompanyComponent } from './components/form-company/form-company.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SliderComponent } from './components/slider/slider.component';
     FormComponent,
     SecondComponent,
     ThirdComponent,
-    SliderComponent
+    SliderComponent,
+    PersonFormComponent,
+    FormCompanyComponent
   ],
   imports: [
     BrowserModule,
