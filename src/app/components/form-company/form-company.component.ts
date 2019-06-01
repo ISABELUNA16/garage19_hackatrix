@@ -11,13 +11,10 @@ export class FormCompanyComponent implements OnInit {
   constructor() { }
 
   numberOnly($event:KeyboardEvent){
-  //  var str=(<HTMLInputElement>$event.target).value;
-  //  if(!str) return;
-  //   var lastChar=str[str.length-1];
-  //   if(isNaN(lastChar)){
-  //     (<HTMLInputElement>$event.target).value=str.substr(0,str.length-1)
-
-  //   }
+   var str=(<HTMLInputElement>$event.target).value;
+   if(!str) return;
+    var lastChar=Number(str[str.length-1]);
+    if(isNaN(lastChar)) $event.preventDefault();
   }
 
   ngOnInit() {
