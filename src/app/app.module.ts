@@ -11,12 +11,10 @@ import { FormComponent } from './components/form/form.component';
 import { SecondComponent } from './components/second/second.component';
 import { ThirdComponent } from './components/third/third.component';
 import { SliderComponent } from './components/slider/slider.component';
-<<<<<<< HEAD
 import { PersonFormComponent } from './components/personform/personform.component';
 import { FormCompanyComponent } from './components/form-company/form-company.component';
-=======
 import { ContactComponent } from './components/contact/contact.component';
->>>>>>> 5154154def459d6cad59de3f3091723ea6e891f8
+import { ObjectsComponent } from './components/objects/objects.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +26,10 @@ import { ContactComponent } from './components/contact/contact.component';
     SecondComponent,
     ThirdComponent,
     SliderComponent,
-<<<<<<< HEAD
     PersonFormComponent,
-    FormCompanyComponent
-=======
-    ContactComponent
->>>>>>> 5154154def459d6cad59de3f3091723ea6e891f8
+    FormCompanyComponent,
+    ContactComponent,
+    ObjectsComponent
   ],
   imports: [
     BrowserModule,

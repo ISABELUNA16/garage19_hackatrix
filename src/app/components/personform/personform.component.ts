@@ -12,4 +12,8 @@ export class PersonFormComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  helpRecord(){
+    alert('Adjunta tu antecedente penal en formato .pdf');
+  }
 }

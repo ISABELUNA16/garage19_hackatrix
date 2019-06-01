@@ -1,52 +1,105 @@
-<div class="formContainer">
-  <h1>Inscripción Persona Natural</h1>
-  <form>
-     <div class="form-group">
-        <label><strong>Grupo:</strong></label>
-        <select class="form-control">
-          <option value="placeholder">placeholder</option>
-        </select>
-   </div>
-    <div class="form-group">
-      <label><strong>Nombres:</strong></label>
-      <input type="text" class="form-control form-text" placeholder="Nombres" />
+<div class="" style="background-color: #0075A1">
+    <div class="container pt-5 pb-5">
+    <h1 class="title"><strong>Inscripción Persona Natural</strong></h1>
+    <br>
+    <form>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label><strong>Nombres:</strong></label>
+                    <input type="text" class="form-control form-text" placeholder="Nombres" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label><strong>Apellidos:</strong></label>
+                    <input type="text" class="form-control form-text" placeholder="Apellidos" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label><strong>Fecha de Nacimiento:</strong></label>
+                    <input type="date" class="form-control form-text"  />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label><strong>País:</strong></label>
+                    <input type="text" class="form-control form-text" placeholder="País" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label><strong>Provincia:</strong></label>
+                    <input type="text" class="form-control form-text" placeholder="Provincia" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label><strong>Distrito:</strong></label>
+                    <input type="text" class="form-control form-text" placeholder="Distrito" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label><strong>Dirección:</strong></label>
+                    <input type="text" class="form-control form-text" placeholder="Calle, Jirón, Pasaje, etc." />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label><strong>Grupo : </strong></label>
+                    <select class="form-control">
+                        <option value="1">Grupo 1</option>
+                        <option value="2">Grupo 2</option>
+                        <option value="3">Grupo 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label><strong>Tipo de identificación : </strong></label>
+                    <select class="form-control" name="" id="">
+                        <option value="1">DNI</option>
+                        <option value="2">Carnet de extrangeria</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label><strong>Numero de identificación:</strong></label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                    <div class="form-group">
+                        <label><strong>Antecentes Penales:</strong></label>
+                        <button type="button" class="btn btn-sm btn-outline-primary" (click)="helpRecord()">?</button>
+                        <input type="file">
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label><strong>¿Por qué quieres ser parte de nosotros?</strong></label>
+                    <textarea type="text" class="form-control form-text" placeholder="Descripción..." rows="4" >
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="offset-md-2 col-md-8">
+                <button type="button" class="btn btn-success btn-block button-send">ENVIAR</button>
+            </div>
+        </div>
+    </form>
     </div>
-    <div class="form-group">
-        <label><strong>Apellidos:</strong></label>
-        <input type="text" class="form-control form-text" placeholder="Apellidos" />
-    </div>
-    <div class="form-group">
-        <label><strong>Fecha de Nacimiento:</strong></label>
-        <input type="date" class="form-control form-text"  />
-    </div>
-    <div class="form-group">
-        <label><strong>Dirección:</strong></label>
-        <input type="text" class="form-control form-text" placeholder="Calle, Jirón, Pasaje, etc." />
-    </div>
-    <div class="form-group">
-        <label><strong>Provincia:</strong></label>
-        <input type="text" class="form-control form-text" placeholder="Provincia" />
-    </div>
-    <div class="form-group">
-        <label><strong>Distrito:</strong></label>
-        <input type="text" class="form-control form-text" placeholder="Distrito" />
-    </div>
-    <div class="form-group">
-        <label><strong>País:</strong></label>
-        <input type="text" class="form-control form-text" placeholder="País" />
-    </div>
-    <div class="form-group">
-        <label><strong>Antecentes Penales:</strong></label>
-        <textarea  class="form-control form-text" placeholder="Antecedentes...." rows="4" >
-
-        </textarea>
-
-    </div>
-    <div class="form-group">
-        <label><strong>Descripción:</strong></label>
-        <textarea type="text" class="form-control form-text" placeholder="Descripción..." rows="4" >
-
-        </textarea>
-    </div>
-  </form>
 </div>
