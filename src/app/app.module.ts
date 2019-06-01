@@ -17,7 +17,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ObjectsComponent } from './components/objects/objects.component';
 import { AboutComponent } from './components/about/about.component';
 import { PurposeComponent } from './components/purpose/purpose.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,9 @@ import { PurposeComponent } from './components/purpose/purpose.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

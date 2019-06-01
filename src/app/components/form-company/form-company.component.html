@@ -2,12 +2,12 @@
     <div class="container pt-5 pb-5">
     <h1 class="title"><strong>Inscripción de empresa</strong></h1>
     <br>
-    <form id="form">
+    <form [formGroup]="formCompany" id="form" (ngSubmit)="ngSubmit()">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label><strong>Área:</strong></label>
-                    <select class="form-control">
+                    <select class="form-control" formControlName="strarea">
                         <option value="placeholder">placeholder</option>
                     </select>
                 </div>
@@ -15,7 +15,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label><strong>Nombre o Razón Social:</strong></label>
-                    <input type="text" class="form-control form-text"  placeholder="Nombre / Razón Social" />
+                    <input type="text" class="form-control form-text"  placeholder="Nombre / Razón Social" formControlName="strname">
                 </div>
             </div>
         </div>
@@ -23,41 +23,41 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label><strong>RUC:</strong></label>
-                    <input type="text" (keypress)="numberOnly($event)"  maxlength="20" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-control form-text" />
+                    <input type="text" (keypress)="numberOnly($event)"  maxlength="20" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-control form-text" formControlName="strruc">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label><strong>Teléfono:</strong></label>
-                    <input type="text"  maxlength="20" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-control form-text"  />
+                    <input type="text"  maxlength="20" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-control form-text"  formControlName="strphone"/>
                 </div>
             </div>
         </div>
       <div class="form-group">
           <label><strong>Email:</strong></label>
-          <input type="email" class="form-control form-text" placeholder="nombre@dominio.com" />
+          <input type="email" class="form-control form-text" placeholder="nombre@dominio.com" formControlName="stremail">
       </div>
       <div class="form-group">
           <label><strong>Provincia :</strong></label>
-          <input type="text" class="form-control form-text" placeholder="Provincia" />
+          <input type="text" class="form-control form-text" placeholder="Provincia" formControlName="strprovince">
       </div>
       <div class="form-group">
           <label><strong>Distrito :</strong></label>
-          <input type="text" class="form-control form-text" placeholder="Distrito" />
+          <input type="text" class="form-control form-text" placeholder="Distrito" formControlName="strdistrito">
       </div>
       <div class="form-group">
             <label><strong>Dirección :</strong></label>
-            <input type="text" class="form-control form-text" placeholder="Distrito" />
+            <input type="text" class="form-control form-text" placeholder="Dirección" formControlName="straddress">
         </div>
       <div class="form-group">
           <label><strong>Descripción:</strong></label>
-          <textarea type="text" class="form-control form-text" placeholder="Descripción..." rows="4" >
+          <textarea type="text" class="form-control form-text" placeholder="Descripción..." rows="4" formControlName="strdescription">
             
           </textarea>
       </div>
       <div class="row">
             <div class="offset-md-2 col-md-8">
-                <button type="button" class="btn btn-success btn-block button-send">ENVIAR</button>
+                <button type="submit" class="btn btn-success btn-block button-send">ENVIAR</button>
             </div>
         </div>
     </form>
