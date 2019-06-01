@@ -23,13 +23,13 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label><strong>RUC:</strong></label>
-                    <input type="text" (keypress)="numberOnly($event)" class="form-control form-text" />
+                    <input type="text" (keypress)="numberOnly($event)"  maxlength="20" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-control form-text" />
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label><strong>Teléfono:</strong></label>
-                    <input type="text" class="form-control form-text"  />
+                    <input type="text"  maxlength="20" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-control form-text"  />
                 </div>
             </div>
         </div>
